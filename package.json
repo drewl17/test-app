@@ -16,7 +16,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "lint": "npx eslint"
+    "lint": "npx eslint src/*"
   },
   "standard": {
     "parser": "@babel/eslint-parser"
@@ -38,6 +38,8 @@
     "@babel/plugin-syntax-jsx": "^7.24.1",
     "@eslint/js": "^9.2.0",
     "eslint": "^8.57.0",
+    "eslint-plugin-react": "^7.34.1",
+    "globals": "^15.2.0",
     "snazzy": "^9.0.0",
     "standard": "^17.1.0"
   }

@@ -3,18 +3,12 @@ const babelParser = require("@babel/eslint-parser");
 
 module.exports = [
     {
-        files: ["**/*.js", "**/*.mjs"],
+        files: ["**/*.js", "**/*.mjs", "src/*.js", "src/index.js"],
         rules: {
             "semi": "error",
             "prefer-const": "error",
             "indent": [1, 4],
-            "no-unused-vars": ["error", {
-                "vars": "all",
-                "args": "after-used",
-                "caughtErrors": "all",
-                "ignoreRestSiblings": false,
-                "reportUsedIgnorePattern": false
-            }]
+            "no-unused-vars": "error"
         }
     },{
         languageOptions: {
