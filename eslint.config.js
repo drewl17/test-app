@@ -7,7 +7,14 @@ module.exports = [
         rules: {
             "semi": "error",
             "prefer-const": "error",
-            "indent": [1, 4]
+            "indent": [1, 4],
+            "no-unused-vars": ["error", {
+                "vars": "all",
+                "args": "after-used",
+                "caughtErrors": "all",
+                "ignoreRestSiblings": false,
+                "reportUsedIgnorePattern": false
+            }]
         }
     },{
         languageOptions: {
